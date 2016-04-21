@@ -1,5 +1,4 @@
 .background-gray{background-color: #E9E9E9; padding: 3% 1% 2% 1%}
-body{background-color: #1c1c1c}
 .dark-font{color: black}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -7,3 +6,5 @@ body{background-color: #1c1c1c}
     margin: auto;
 }
 .red-font{color: red}
+.background-blue{background-color: #5392B6}
+.gold-font{color: #e3b986}

@@ -6,7 +6,20 @@
     margin: auto;
 }
 .red-font{color: red}
-.background-blue{background-color: #49b673
+.background-blue{background-color: #1481BA
 }
 .gold-font{color: #e3b986}
 .pillsPadding{padding-bottom: 7%}
+.whiteFont{
+    color:white;
+}
+.centered{
+    text-align: center;
+}
+.iconImage{
+   width:33px;
+    height:33px;
+}
+.specialColor{
+    background-color: indianred;
+}

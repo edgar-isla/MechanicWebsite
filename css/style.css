@@ -6,7 +6,7 @@
     margin: auto;
 }
 .red-font{color: red}
-.background-blue{background-color: #1481BA
+.background-blue{background-color: #034748;
 }
 .gold-font{color: #e3b986}
 .pillsPadding{padding-bottom: 7%}
@@ -20,6 +20,16 @@
    width:33px;
     height:33px;
 }
-.specialColor{
-    background-color: indianred;
+.priceSpan{
+    color: #b40000;
+    font-size: x-large
+}
+.specialsDiv{
+    padding:0 2%;
+    background: #5dcd6d;
+    border-radius: 15px;
+    text-align: center;
+        /*padding: 20px;*/
+        /*width: 200px;*/
+        /*height: 150px;*/
 }

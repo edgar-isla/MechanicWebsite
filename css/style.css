@@ -26,10 +26,21 @@
 }
 .specialsDiv{
     padding:0 2%;
-    background: #5dcd6d;
+    background: #ddc03e;
     border-radius: 15px;
     text-align: center;
         /*padding: 20px;*/
         /*width: 200px;*/
         /*height: 150px;*/
+}
+.border{
+
+    border-radius: 25px;
+    border: 2px solid #2d5974;
+    padding: 20px;
+}
+@media(max-width:767px){
+    .addMargin{
+        margin-top: 4%;
+    }
 }

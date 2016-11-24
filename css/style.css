@@ -46,6 +46,9 @@
     .lessMargin{
         margin-top: -5%;
     }
+    .buttonShow{
+        visibility: visible;
+    }
 }
 .checkEngineDiv{
     padding: 3% 0 3% 0;
@@ -58,4 +61,7 @@
     padding: 3%;
     background-color: #056b6d;
     margin-bottom: 5%;
+}
+.buttonShow{
+    visibility: hidden;
 }

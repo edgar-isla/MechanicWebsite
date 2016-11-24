@@ -51,3 +51,11 @@
     padding: 3% 0 3% 0;
     margin-top: 2%;
 }
+.aboutImage{
+
+    border-radius: 25px;
+    border: 2px solid #001730;
+    padding: 3%;
+    background-color: #056b6d;
+    margin-bottom: 5%;
+}

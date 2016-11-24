@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            $("#div1").delay(400).css('left', function(){ return $(this).offset().left; })
-                    .animate({"left":"0px"}, "slow");
-
-        });
-    </script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+<h3>My Google Maps Demo</h3>
+<div id="map"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5968825302857!2d-111.78983768460537!3d40.37346197937017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d816707b5e9d5%3A0x2fdeb501dc5958bf!2sEDGAR+AUTOMOTIVE+LLC!5e0!3m2!1sen!2sus!4v1480025388150" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<script>
+    function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
 
-<button>Start Animation</button>
-
-<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
-
-<div id="div1" style="background:#98bf21;height:100px;width:100px;position:absolute; margin: 0 0 0 20%"></div>
-
+    document.onload=function () {
+        initMap();
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArkdLvHhbd7STIiw5hVc7QE1NcbH5zN-M&callback=initMap">
+</script>
 </body>
 </html>

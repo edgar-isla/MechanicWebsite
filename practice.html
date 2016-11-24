@@ -1,36 +1,64 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+    <!--<style>-->
+        <!--#map {-->
+            <!--height: 400px;-->
+            <!--width: 100%;-->
+        <!--}-->
+    <!--</style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h3>My Google Maps Demo</h3>-->
+<!--<div id="map"></div>-->
+<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5968825302857!2d-111.78983768460537!3d40.37346197937017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d816707b5e9d5%3A0x2fdeb501dc5958bf!2sEDGAR+AUTOMOTIVE+LLC!5e0!3m2!1sen!2sus!4v1480025388150" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+<!--<script>-->
+    <!--function initMap() {-->
+        <!--var uluru = {lat: -25.363, lng: 131.044};-->
+        <!--var map = new google.maps.Map(document.getElementById('map'), {-->
+            <!--zoom: 4,-->
+            <!--center: uluru-->
+        <!--});-->
+        <!--var marker = new google.maps.Marker({-->
+            <!--position: uluru,-->
+            <!--map: map-->
+        <!--});-->
+    <!--}-->
+
+    <!--document.onload=function () {-->
+        <!--initMap();-->
+    <!--}-->
+<!--</script>-->
+<!--<script async defer-->
+        <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArkdLvHhbd7STIiw5hVc7QE1NcbH5zN-M&callback=initMap">-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
 <!DOCTYPE html>
 <html>
 <head>
     <style>
-        #map {
-            height: 400px;
-            width: 100%;
+        h1.visible {
+            visibility: hidden;
         }
+        .show{
+            visibility: visible;
+        }
+
     </style>
 </head>
 <body>
-<h3>My Google Maps Demo</h3>
-<div id="map"></div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5968825302857!2d-111.78983768460537!3d40.37346197937017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d816707b5e9d5%3A0x2fdeb501dc5958bf!2sEDGAR+AUTOMOTIVE+LLC!5e0!3m2!1sen!2sus!4v1480025388150" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<button onclick="showVis()">press to show h1</button>
+<h1 id="Juan" class="visible">This is a visible heading</h1>
+<p>Notice that the invisible heading still takes up space.</p>
 <script>
-    function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
+    function showVis() {
+        alert("workes");
+        document.getElementById("Juan").className="show";
+
     }
 
-    document.onload=function () {
-        initMap();
-    }
 </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArkdLvHhbd7STIiw5hVc7QE1NcbH5zN-M&callback=initMap">
-</script>
+
 </body>
 </html>
